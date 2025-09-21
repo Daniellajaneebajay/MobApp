@@ -6,6 +6,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Splash from './screens/Splash';
 import Ongoing1 from './screens/Ongoing1';
 import Ongoing2 from './screens/Ongoing2';
+import Ongoing3 from './screens/Ongoing3';
+import Ongoing4 from './screens/Ongoing4';
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +18,8 @@ export default function App() {
         <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="Ongoing1" component={Ongoing1} />
         <Stack.Screen name="Ongoing2" component={Ongoing2} />
+        <Stack.Screen name="Ongoing3" component={Ongoing3} />
+        <Stack.Screen name="Ongoing4" component={Ongoing4} />
       </Stack.Navigator>
     </NavigationContainer>
   );

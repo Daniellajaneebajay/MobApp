@@ -5,7 +5,7 @@ import { useFonts } from 'expo-font';
 import { Poppins_700Bold } from '@expo-google-fonts/poppins';
 import { Inter_600SemiBold } from '@expo-google-fonts/inter';
 
-export default function Ongoing2({ navigation }) {
+export default function Ongoing4({ navigation }) {
   const [fontsLoaded] = useFonts({
     Poppins_700Bold,
     Inter_600SemiBold,
@@ -22,7 +22,7 @@ export default function Ongoing2({ navigation }) {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require('../assets/ONGOING SCREEN (2).png')} 
+        source={require('../assets/ONGOING SCREEN (4).jpg')} 
         style={styles.topSection}
         imageStyle={styles.topImage}
       />
@@ -30,28 +30,23 @@ export default function Ongoing2({ navigation }) {
       <View style={styles.bottomSection}>
         <View style={styles.handle} />
 
-        <Text style={styles.welcome}>Welcome to</Text>
-
-        <Text style={styles.brand}>
-          <Text style={styles.hydro}>HYDRO</Text>
-          <Text style={styles.verde}>VERDE</Text>
-        </Text>
+        <Text style={styles.welcome}>Automated. Efficient.{"\n"}Green.</Text>
 
         <Text style={styles.subtitle}>
-          Where Plants and Tech{"\n"}Thrive Together!
+          Automation at its best-Hydroverde{"\n"}handles the rest.
         </Text>
 
         <Pressable
           style={styles.nextButton}
-          onPress={() => navigation.navigate('Ongoing3')}
+          onPress={() => navigation.navigate('Ongoing4')}
         >
           <Text style={styles.nextText}>Next</Text>
         </Pressable>
 
         <View style={styles.dotsContainer}>
+          <View style={styles.dot} />
+          <View style={styles.dot} />
           <View style={[styles.dot, styles.activeDot]} />
-          <View style={styles.dot} />
-          <View style={styles.dot} />
         </View>
       </View>
     </View>
@@ -102,22 +97,9 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_700Bold',  
     fontSize: 24,
     color: '#000000',
+    textAlign: 'center',
     marginBottom: 8,
-  },
-
-  brand: {
-    flexDirection: 'row',
-    marginBottom: 16,
-  },
-  hydro: {
-    color: '#24009C',
-    fontFamily: 'Poppins_700Bold',
-    fontSize: 42,
-  },
-  verde: {
-    color: '#43671A',
-    fontFamily: 'Poppins_700Bold',
-    fontSize: 42,
+    marginTop: 30,
   },
 
   subtitle: {
@@ -126,6 +108,7 @@ const styles = StyleSheet.create({
     color: '#000000',
     textAlign: 'center',
     lineHeight: 30,
+    marginTop: 30,
     marginBottom: 36,
     paddingHorizontal: 12,
   },
